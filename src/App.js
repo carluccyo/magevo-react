@@ -6,13 +6,19 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <button type="button" className="btn btn-default">Default</button>
+
+        <button type="button" className="btn btn-primary">Primary</button>
+
+        <button type="button" className="btn btn-success">Success</button>
+
+        <button type="button" className="btn btn-info">Info</button>
+
+        <button type="button" className="btn btn-warning">Warning</button>
+
+        <button type="button" className="btn btn-danger">Danger</button>
+
+        <button type="button" className="btn btn-link">Link</button>
       </div>
     );
   }

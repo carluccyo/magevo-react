@@ -1,0 +1,51 @@
+//variables and mixins
+@import "magevo/variables";
+@import "magevo/mixins";
+@import "magevo/shadows";
+
+//plugin css
+@import "magevo/plugins/plugin-nouislider";
+@import "magevo/plugins/animate";
+@import "magevo/plugins/sweetalert2";
+@import "magevo/plugins/datatables.net";
+@import "magevo/plugins/jquery.jvectormap";
+@import "magevo/plugins/plugin-datetime-picker";
+@import "magevo/plugins/fullcalendar";
+@import "magevo/plugins/wizard-card";
+@import "magevo/plugins/chartist";
+@import "magevo/plugins/select-bootstrap";
+@import "magevo/plugins/perfect-scrollbar";
+
+
+// Core CSS
+@import "magevo/typography";
+@import "magevo/sidebar-and-main-panel";
+@import "magevo/buttons";
+@import "magevo/misc";
+@import "magevo/inputs";
+@import "magevo/fileupload";
+@import "magevo/alerts";
+@import "magevo/tables";
+@import "magevo/forms";
+@import "magevo/checkboxes";
+@import "magevo/radios";
+@import "magevo/progress";
+@import "magevo/togglebutton";
+@import "magevo/pages";
+@import "magevo/tags";
+@import "magevo/timeline";
+@import "magevo/ripples";
+@import "magevo/panels";
+@import "magevo/pagination";
+@import "magevo/labels";
+@import "magevo/pills";
+@import "magevo/dialogs";
+@import "magevo/navbars";
+@import "magevo/popups";
+@import "magevo/footers";
+
+// Fancy Stuff
+@import "magevo/dropdown";
+@import "magevo/cards";
+@import "magevo/tabs";
+@import "magevo/responsive";
