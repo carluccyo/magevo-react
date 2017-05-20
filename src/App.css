@@ -6863,7 +6863,8 @@ select.form-control {
       color: #ffffff; }
   .alert-info, .alert-danger, .alert-warning, .alert-success, .alert-rose {
     color: #ffffff; }
-  .alert-default a, .alert-default .alert-link {
+  .alert-default a,
+  .alert-default .alert-link {
     color: rgba(0,0,0, 0.87); }
   .alert span {
     display: block;
