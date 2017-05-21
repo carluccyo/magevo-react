@@ -62,9 +62,9 @@ $(document).ready(function(){
     //removed class label and label-color from tag span and replaced with data-color
     var tagClass = $('.tagsinput').data('color');
 
-    $('.tagsinput').tagsinput({
-        tagClass: ' tag-'+ tagClass +' '
-    });
+    // $('.tagsinput').tagsinput({
+    //     tagClass: ' tag-'+ tagClass +' '
+    // });
 
     // Activate bootstrap-select
     $(".select").dropdown({ "dropdownClass": "dropdown-menu", "optionClass": "" });
