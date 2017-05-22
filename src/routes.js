@@ -1,5 +1,6 @@
 import React from 'react'
 import App from './App';
+import Dashboard from './Dashboard';
 
 import {
   BrowserRouter as Router,
@@ -18,18 +19,15 @@ const About = () => (
 
 
 
+
+
+
+
 const Routes = () => (
-  <Router>
-    <Switch>
-      <Route path="/" exact component={App}>
-        <Route path="/about" component={App}/>
-      </Route>
-      
-      {/*<Redirect from="/old-match" to="/will-match"/>
-      <Route path="/will-match" component={WillMatch}/>
-      <Route component={NoMatch}/>*/}
-    </Switch>
+  <Router basename='/'>
+    <Route exact path="/" component={App}/>
   </Router>
 )
+
 export default Routes;
 
