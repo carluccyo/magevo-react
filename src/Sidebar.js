@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import { NavLink } from 'react-router-dom'
 
 // import './App.css';
 
@@ -52,11 +53,18 @@ class Sidebar extends Component {
                             </a>
                             <div className="collapse in" id="read">
                                 <ul className="nav">
+                                    
                                     <li className="active">
-                                        <a href="dashboard.html">Insights</a>
+                                        {/*<a href="dashboard.html">Insights</a>*/}
+                                        <NavLink to="/dashboard" activeClassName="selected">dashboard</NavLink>
                                     </li>
                                     <li>
-                                        <a href="improving.html">Improving</a>
+                                        {/*<a href="improving.html">Improving</a>*/}
+                                        <NavLink to="/buttons" activeClassName="selected">buttons</NavLink>
+                                    </li>
+                                    <li>
+                                        {/*<a href="improving.html">Improving</a>*/}
+                                        <NavLink to="/tables" activeClassName="selected">tables</NavLink>
                                     </li>
 
 
