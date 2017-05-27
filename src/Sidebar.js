@@ -19,19 +19,41 @@ class NavItem extends Component {
 
     }
 
+    shouldComponentUpdate(nextProps, nextState) {
+        // console.log('============= BEGIN =======================');
+        // console.log('shouldComponentUpdate', nextProps, nextState);
+
+        nextState = {
+            active: nextProps.activeItem ? nextProps.activeItem == nextProps.itemId : false
+        };
+
+
+        this.state = {
+            active: nextProps.activeItem ? nextProps.activeItem == nextProps.itemId : false
+        };
+
+        // console.log('====================================');
+        // console.log('shouldComponentUpdate', nextProps, nextState);
+
+        // console.log('=========== END =========================');
+
+        return true;
+    }
+
+
+
+
     setActive() {
         this.setState({ active: true });
     }
 
     render() {
 
-        if (this.state.active) {
-            { var tabClassName = "active"; }
-        }
+        { var tabClassName = this.props.activeItem === this.props.itemId ? "active" : ""; }
 
         return (
-            <li className={this.state.active ? 'active' : ''} onClick={this.props.action.bind(this, this.props.itemId)}  >
-                <NavLink to={this.props.to} activeClassName={tabClassName}>{this.props.title}</NavLink>
+            <li className={tabClassName} onClick={this.props.action.bind(this, this.props.itemId)}  >
+                <NavLink to={this.props.to}>{this.props.title}</NavLink>
             </li>
         );
     };
@@ -55,6 +77,9 @@ class Sidebar extends Component {
     };
 
     handler(itemId) {
+
+        console.log(itemId);
+
         this.setState({
             activeItem: itemId
         });
