@@ -1,11 +1,11 @@
-import React, { Component, cloneElement, Children } from 'react';
+import React, { Component } from 'react';
 
 
 class Grid extends Component {
     state = {}
     render() {
         return (
-            
+
             <div className="container-fluid">
                 <h4 className="title">XS Grid
                         <small>Always Horizontal</small>
