@@ -4,7 +4,7 @@
 
      if (isWindows && !$('body').hasClass('sidebar-mini')){
         // if we are on windows OS we activate the perfectScrollbar function
-        $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar();
+        // $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar();
 
         $('html').addClass('perfect-scrollbar-on');
     } else {
@@ -210,9 +210,9 @@ md = {
                 $('body').removeClass('sidebar-mini');
                 md.misc.sidebar_mini_active = false;
 
-                if(isWindows){
-                    $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar();
-                }
+                // if(isWindows){
+                //     $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar();
+                // }
 
             }else{
 
@@ -220,9 +220,9 @@ md = {
                     $(this).css('height','auto');
                 });
 
-                if(isWindows){
-                    $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar('destroy');
-                }
+                // if(isWindows){
+                //     $('.sidebar .sidebar-wrapper, .main-panel').perfectScrollbar('destroy');
+                // }
 
                 setTimeout(function(){
                     $('body').addClass('sidebar-mini');

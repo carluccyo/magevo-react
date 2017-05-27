@@ -14,6 +14,7 @@ import {
 import './App.css';
 
 import Sidebar from './Sidebar';
+import MiniSidebar from './MiniSidebar';
 import Navbar from './Navbar';
 import Dashboard from './routes/Dashboard';
 import Buttons from './routes/Buttons';
@@ -21,11 +22,57 @@ import Tables from './routes/Tables';
 
 import Grid from './routes/Grid';
 
+
+class Footer extends Component {
+  state = {  }
+  render() {
+    return (
+        <footer className="footer">
+            <div className="container-fluid">
+                <nav className="pull-left">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Company
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Portfolio
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Blog
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <p className="copyright pull-right">
+                    © <a href="">Company</a>, made with love for a better web
+                </p>
+            </div>
+        </footer>
+    );
+  }
+}
+
+
+
+
+
+
+
 class App extends Component {
   render() {
     return (
       <div className="wrapper">
-        <Sidebar />
+        <MiniSidebar />
         <div className="main-panel">
           <Navbar />
           <div className="content">
@@ -38,6 +85,7 @@ class App extends Component {
               </Switch>
             </div>
           </div>
+          <Footer />
         </div>
       </div>
     );

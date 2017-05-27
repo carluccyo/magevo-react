@@ -22,7 +22,7 @@ class NavItem extends Component {
 }
 
 
-class Sidebar extends Component {
+class MiniSidebar extends Component {
 
     constructor(props) {
         super(props);
@@ -50,22 +50,10 @@ class Sidebar extends Component {
         return (
             <div className="sidebar" data-active-color="blue" data-background-color="white" data-image={wolf2}>
 
-                <div className="logo">
-                    <a href="" className="simple-text">
-                        <img alt="" width="100px" src={wolf2} />
-                    </a>
-                </div>
-
-                <div className="logo logo-mini">
-                    <a href="" className="simple-text">
-                        <img alt="" width="50px" src={wolf2} />
-                    </a>
-                </div>
-
                 <div className="sidebar-wrapper">
                     <div className="user">
                         <div className="photo">
-                            <img alt="" src={avatar} />
+                            <img alt="" src={wolf} />
                         </div>
                         <div className="info">
                             <a data-toggle="collapse" href="#collapseExample" className="collapsed">
@@ -159,4 +147,4 @@ class Sidebar extends Component {
     }
 }
 
-export default Sidebar;
+export default MiniSidebar;
