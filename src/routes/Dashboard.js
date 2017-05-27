@@ -89,6 +89,7 @@ ChartistGraph.propTypes = {
 
 
 class Dashboard extends Component {
+
     state = {
 
         data: {
@@ -112,12 +113,6 @@ class Dashboard extends Component {
         aspectRatio: 'ct-octave'
 
     }
-
-
-
-
-
-
 
     render() {
         return (
