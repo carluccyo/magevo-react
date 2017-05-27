@@ -85,7 +85,7 @@ class Sidebar extends Component {
 
                         <li>
                             <a data-toggle="collapse" href="#read">
-                                <i className="material-icons">timeline</i>
+                                <i className="material-icons">apps</i>
                                 <p>Read
                               <b className="caret"></b>
                                 </p>
@@ -96,6 +96,7 @@ class Sidebar extends Component {
                                     <NavItem action={this.handler} activeItem={this.state.activeItem} itemId="dashboard" title="Dashboard" to="/" />
                                     <NavItem action={this.handler} activeItem={this.state.activeItem} itemId="buttons" title="Buttons" to="/buttons" />
                                     <NavItem action={this.handler} activeItem={this.state.activeItem} itemId="tables" title="Tables" to="/tables" />
+                                    <NavItem action={this.handler} activeItem={this.state.activeItem} itemId="grid" title="Grid" to="/grid" />
                                 </ul>
                             </div>
 

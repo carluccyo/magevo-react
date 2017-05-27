@@ -19,6 +19,7 @@ import Dashboard from './routes/Dashboard';
 import Buttons from './routes/Buttons';
 import Tables from './routes/Tables';
 
+import Grid from './routes/Grid';
 
 class App extends Component {
   render() {
@@ -33,6 +34,7 @@ class App extends Component {
                 <Route exact path='/' component={Dashboard} />
                 <Route exact path='/buttons' component={Buttons} />
                 <Route exact path='/tables' component={Tables} />
+                <Route exact path='/grid' component={Grid} />
               </Switch>
             </div>
           </div>
