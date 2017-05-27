@@ -6,47 +6,6 @@ import { NavLink } from 'react-router-dom'
 
 class NavItem extends Component {
 
-    constructor(props) {
-
-        super(props);
-
-        // Assign all the correct event handlers.
-        this.setActive = this.setActive.bind(this);
-
-        this.state = {
-            active: props.activeItem ? props.activeItem == props.itemId : false
-        };
-
-    }
-
-    shouldComponentUpdate(nextProps, nextState) {
-        // console.log('============= BEGIN =======================');
-        // console.log('shouldComponentUpdate', nextProps, nextState);
-
-        nextState = {
-            active: nextProps.activeItem ? nextProps.activeItem == nextProps.itemId : false
-        };
-
-
-        this.state = {
-            active: nextProps.activeItem ? nextProps.activeItem == nextProps.itemId : false
-        };
-
-        // console.log('====================================');
-        // console.log('shouldComponentUpdate', nextProps, nextState);
-
-        // console.log('=========== END =========================');
-
-        return true;
-    }
-
-
-
-
-    setActive() {
-        this.setState({ active: true });
-    }
-
     render() {
 
         { var tabClassName = this.props.activeItem === this.props.itemId ? "active" : ""; }
