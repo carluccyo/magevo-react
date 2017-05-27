@@ -17,13 +17,6 @@ class NavItem extends Component {
             active: props.activeItem ? props.activeItem == props.itemId : false
         };
 
-
-        console.log('============== NavItem =============');
-        console.log(this.props);
-        console.log(this.state);
-        console.log('====================================');
-
-
     }
 
     setActive() {
@@ -37,7 +30,7 @@ class NavItem extends Component {
         }
 
         return (
-            <li className={this.state.active ? 'active' : ''}  onClick={this.props.action}  >
+            <li className={this.state.active ? 'active' : ''} onClick={this.props.action.bind(this, this.props.itemId)}  >
                 <NavLink to={this.props.to} activeClassName={tabClassName}>{this.props.title}</NavLink>
             </li>
         );
@@ -61,15 +54,10 @@ class Sidebar extends Component {
 
     };
 
-    handler() {
-
+    handler(itemId) {
         this.setState({
-            activeItem: 'buttons'
+            activeItem: itemId
         });
-        
-        console.log('====================================');
-        console.log('handler', this);
-        console.log('====================================');
     }
 
 
@@ -79,13 +67,13 @@ class Sidebar extends Component {
             <div className="sidebar" data-active-color="blue" data-background-color="white" data-image="../assets/img/sephora2.png">
 
                 <div className="logo">
-                    <a href="#" className="simple-text">
+                    <a href="" className="simple-text">
                         <img width="100px" src="https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/2575343/1162/776/m1/fpnw/wm0/1-.jpg?1492766875&s=b84d7135a1fbf8221a200ec727fd5e17" />
                     </a>
                 </div>
 
                 <div className="logo logo-mini">
-                    <a href="#" className="simple-text">
+                    <a href="" className="simple-text">
                         <img width="50px" src="https://s-media-cache-ak0.pinimg.com/originals/d9/3f/2c/d93f2c5d5a37dc2c4513f36d0be81946.jpg" />
                     </a>
                 </div>
@@ -120,13 +108,15 @@ class Sidebar extends Component {
                               <b className="caret"></b>
                                 </p>
                             </a>
+
                             <div className="collapse in" id="read">
                                 <ul className="nav">
                                     <NavItem action={this.handler} activeItem={this.state.activeItem} itemId="dashboard" title="Dashboard" to="/" />
-                                    <NavItem action={this.handler} activeItem={this.state.activeItem} itemId="buttons"   title="Buttons" to="/buttons" />
-                                    <NavItem action={this.handler} activeItem={this.state.activeItem} itemId="tables"    title="Tables" to="/tables" />
+                                    <NavItem action={this.handler} activeItem={this.state.activeItem} itemId="buttons" title="Buttons" to="/buttons" />
+                                    <NavItem action={this.handler} activeItem={this.state.activeItem} itemId="tables" title="Tables" to="/tables" />
                                 </ul>
                             </div>
+
                         </li>
 
                         <li>
