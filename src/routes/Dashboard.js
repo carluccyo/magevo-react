@@ -4,15 +4,13 @@ import card1 from '../assets/img/card-1.jpeg';
 import card2 from '../assets/img/card-2.jpeg';
 import card3 from '../assets/img/card-3.jpeg';
 
-import 'chartist/dist/chartist';
+import Chartist from 'chartist/dist/chartist';
 
 import PropTypes from 'prop-types';
 
 
 
 class ChartistGraph extends Component {
-
-    displayName: 'ChartistGraph'
 
     componentWillReceiveProps(newProps) {
         this.updateChart(newProps);
@@ -33,7 +31,8 @@ class ChartistGraph extends Component {
     }
 
     updateChart(config) {
-        let Chartist = require('chartist');
+
+        // let Chartist = require('chartist');
 
         let { type, data } = config;
         let options = config.options || {};
@@ -217,7 +216,8 @@ class Dashboard extends Component {
 
 
 
-
+                <h3>Manage Listings</h3>
+                <br />
 
                 <div className="row">
                     <div className="col-md-4">
