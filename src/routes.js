@@ -16,8 +16,8 @@ import './App.css';
 import Sidebar from './Sidebar';
 import Navbar from './Navbar';
 import Dashboard from './Dashboard';
-import Buttons from './Buttons';
-import Tables from './Tables';
+import Buttons from './routes/Buttons';
+import Tables from './routes/Tables';
 
 
 class App extends Component {

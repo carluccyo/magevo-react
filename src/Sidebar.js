@@ -8,7 +8,9 @@ class NavItem extends Component {
 
     render() {
 
-        { var tabClassName = this.props.activeItem === this.props.itemId ? "active" : ""; }
+        {
+            var tabClassName = this.props.activeItem === this.props.itemId ? "active" : "";
+        }
 
         return (
             <li className={tabClassName} onClick={this.props.action.bind(this, this.props.itemId)}  >
@@ -36,8 +38,6 @@ class Sidebar extends Component {
     };
 
     handler(itemId) {
-
-        console.log(itemId);
 
         this.setState({
             activeItem: itemId
