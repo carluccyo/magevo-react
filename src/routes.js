@@ -15,7 +15,7 @@ import './App.css';
 
 import Sidebar from './Sidebar';
 import Navbar from './Navbar';
-import Dashboard from './Dashboard';
+import Dashboard from './routes/Dashboard';
 import Buttons from './routes/Buttons';
 import Tables from './routes/Tables';
 
