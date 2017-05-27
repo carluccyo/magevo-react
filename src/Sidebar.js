@@ -8,9 +8,7 @@ class NavItem extends Component {
 
     render() {
 
-        {
-            var tabClassName = this.props.activeItem === this.props.itemId ? "active" : "";
-        }
+        var tabClassName = this.props.activeItem === this.props.itemId ? "active" : "";
 
         return (
             <li className={tabClassName} onClick={this.props.action.bind(this, this.props.itemId)}  >
@@ -52,20 +50,20 @@ class Sidebar extends Component {
 
                 <div className="logo">
                     <a href="" className="simple-text">
-                        <img width="100px" src="https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/2575343/1162/776/m1/fpnw/wm0/1-.jpg?1492766875&s=b84d7135a1fbf8221a200ec727fd5e17" />
+                        <img alt="" width="100px" src="https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/2575343/1162/776/m1/fpnw/wm0/1-.jpg?1492766875&s=b84d7135a1fbf8221a200ec727fd5e17" />
                     </a>
                 </div>
 
                 <div className="logo logo-mini">
                     <a href="" className="simple-text">
-                        <img width="50px" src="https://s-media-cache-ak0.pinimg.com/originals/d9/3f/2c/d93f2c5d5a37dc2c4513f36d0be81946.jpg" />
+                        <img alt="" width="50px" src="https://s-media-cache-ak0.pinimg.com/originals/d9/3f/2c/d93f2c5d5a37dc2c4513f36d0be81946.jpg" />
                     </a>
                 </div>
 
                 <div className="sidebar-wrapper">
                     <div className="user">
                         <div className="photo">
-                            <img src="https://s-media-cache-ak0.pinimg.com/originals/d9/3f/2c/d93f2c5d5a37dc2c4513f36d0be81946.jpg" />
+                            <img alt="" src="https://s-media-cache-ak0.pinimg.com/originals/d9/3f/2c/d93f2c5d5a37dc2c4513f36d0be81946.jpg" />
                         </div>
                         <div className="info">
                             <a data-toggle="collapse" href="#collapseExample" className="collapsed">
@@ -74,7 +72,7 @@ class Sidebar extends Component {
                             <div className="collapse" id="collapseExample">
                                 <ul className="nav">
                                     <li>
-                                        <a href="#">Access Panel</a>
+                                        <a href="">Access Panel</a>
                                     </li>
                                     <li>
                                         <a href="pages/login.html">Log out</a>
@@ -142,7 +140,7 @@ class Sidebar extends Component {
                                         <a href="copywriting.html">Copywriting</a>
                                     </li>
                                     <li>
-                                        <a href="#">FAQs</a>
+                                        <a href="">FAQs</a>
                                     </li>
                                 </ul>
                             </div>

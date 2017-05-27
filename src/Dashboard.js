@@ -97,54 +97,54 @@ class Dashboard extends Component {
                         <div className="card-content">
                             <ul className="pagination pagination-primary">
                                 <li>
-                                    <a href="javascript:void(0);">1</a>
+                                    <a href="">1</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);">...</a>
+                                    <a href="">...</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);">5</a>
+                                    <a href="">5</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);">6</a>
+                                    <a href="">6</a>
                                 </li>
                                 <li className="active">
-                                    <a href="javascript:void(0);">7</a>
+                                    <a href="">7</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);">8</a>
+                                    <a href="">8</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);">9</a>
+                                    <a href="">9</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);">...</a>
+                                    <a href="">...</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);">12</a>
+                                    <a href="">12</a>
                                 </li>
                             </ul>
                             <ul className="pagination pagination-info">
                                 <li>
-                                    <a href="javascript:void(0);"> prev</a>
+                                    <a href=""> prev</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);">1</a>
+                                    <a href="">1</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);">2</a>
+                                    <a href="">2</a>
                                 </li>
                                 <li className="active">
-                                    <a href="javascript:void(0);">3</a>
+                                    <a href="">3</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);">4</a>
+                                    <a href="">4</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);">5</a>
+                                    <a href="">5</a>
                                 </li>
                                 <li>
-                                    <a href="javascript:void(0);">next </a>
+                                    <a href="">next </a>
                                 </li>
                             </ul>
                         </div>
