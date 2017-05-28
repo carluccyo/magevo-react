@@ -99,6 +99,7 @@ class Sidebar extends Component {
                                     <NavItem action={this.handler} activeItem={this.state.activeItem} itemId="buttons" title="Buttons" to="/buttons" />
                                     <NavItem action={this.handler} activeItem={this.state.activeItem} itemId="tables" title="Tables" to="/tables" />
                                     <NavItem action={this.handler} activeItem={this.state.activeItem} itemId="grid" title="Grid" to="/grid" />
+                                    <NavItem action={this.handler} activeItem={this.state.activeItem} itemId="timeline" title="Timeline" to="/timeline" />
                                 </ul>
                             </div>
 

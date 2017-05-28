@@ -19,9 +19,10 @@ import Navbar from './Navbar';
 import Dashboard from './routes/Dashboard';
 import Buttons from './routes/Buttons';
 import Tables from './routes/Tables';
+import Timeline from './routes/Timeline';
 
 import Grid from './routes/Grid';
-
+import UserProfile from './routes/UserProfile';
 
 class Footer extends Component {
   state = {  }
@@ -82,6 +83,8 @@ class App extends Component {
                 <Route exact path='/buttons' component={Buttons} />
                 <Route exact path='/tables' component={Tables} />
                 <Route exact path='/grid' component={Grid} />
+                <Route exact path='/timeline' component={Timeline} />
+                <Route exact path='/userProfile' component={UserProfile} />
               </Switch>
             </div>
           </div>
