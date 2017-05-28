@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 class Buttons extends Component {
     state = {}
     render() {
@@ -7,7 +8,7 @@ class Buttons extends Component {
             <div className="card">
 
                 <div className="row">
-                    
+
                     <div className="col-md-6">
                         <div className="card-header">
                             <h4 className="card-title">Pick your Color (Ripple)</h4>
@@ -28,22 +29,23 @@ class Buttons extends Component {
                             <h4 className="card-title">Pick your Color2</h4>
                         </div>
                         <div className="card-content">
-                            <button className="btn">Default</button>
-                            <button className="btn btn-primary">Primary</button>
-                            <button className="btn btn-info">Info</button>
-                            <button className="btn btn-success">Success</button>
-                            <button className="btn btn-warning">Warning</button>
-                            <button className="btn btn-danger">Danger</button>
-                            <button className="btn btn-rose">Rose</button>
+
+                            <button className="mdl-button mdl-js-button mdl-button--fab mdl-button--colored">
+                                <i className="material-icons">add</i>
+                            </button>
+
+                            <button className="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+                                <i className="material-icons">alarm_on</i>
+                            </button>
                         </div>
                     </div>
-                
-                
-                </div>   
+
+
+                </div>
 
 
                 <div className="row">
-                    
+
                     <div className="col-md-6">
                         <div className="card-header">
                             <h4 className="card-title">Pick your Color</h4>

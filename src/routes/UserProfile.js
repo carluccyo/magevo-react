@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import avatar from '../assets/img/avatar.jpg';
 
 class UserProfile extends Component {
     state = {}
@@ -51,6 +52,7 @@ class UserProfile extends Component {
                                                 <span className="material-input"></span></div>
                                             </div>
                                         </div>
+                                        
                                         <div className="row">
                                             <div className="col-md-12">
                                                 <div className="form-group label-floating is-empty">
@@ -59,6 +61,7 @@ class UserProfile extends Component {
                                                 <span className="material-input"></span></div>
                                             </div>
                                         </div>
+
                                         <div className="row">
                                             <div className="col-md-4">
                                                 <div className="form-group label-floating is-empty">
@@ -79,6 +82,7 @@ class UserProfile extends Component {
                                                 <span className="material-input"></span></div>
                                             </div>
                                         </div>
+
                                         <div className="row">
                                             <div className="col-md-12">
                                                 <div className="form-group">
@@ -101,12 +105,12 @@ class UserProfile extends Component {
                     <div className="card card-profile">
                         <div className="card-avatar">
                             <a href="#pablo">
-                                <img className="img" src="../../assets/img/faces/marc.jpg" />
+                                <img className="img" src={avatar} />
                             </a>
                         </div>
                         <div className="card-content">
                             <h6 className="category text-gray">CEO / Co-Founder</h6>
-                            <h4 className="card-title">Alec Thompson</h4>
+                            <h4 className="card-title">Kim Thompson</h4>
                             <p className="description">
                                 Don't be scared of the truth because we need to restart the human foundation in truth And I love you like Kanye loves Kanye I love Rick Owens’ bed design but the back is...
                             </p>
