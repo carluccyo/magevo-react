@@ -6,6 +6,10 @@ import avatar from './assets/img/avatar.jpg';
 import wolf from './assets/img/wolf.jpg';
 import wolf2 from './assets/img/wolf2.png';
 
+
+import napoli from './assets/img/napoli.png';
+import napoli3d from './assets/img/napoli_3d_logo.jpg';
+
 class NavItem extends Component {
 
     render() {
@@ -48,13 +52,17 @@ class MiniSidebar extends Component {
 
     render() {
         return (
-            <div className="sidebar" data-active-color="blue" data-background-color="white" data-image={wolf2}>
+            <div className="sidebar" data-active-color="blue" data-background-color="white" data-image={napoli}>
 
                 <div className="sidebar-wrapper">
                     <div className="user">
+
                         <div className="photo">
-                            <img alt="" src={wolf} />
+                            <a href="/">
+                                <img alt="" src={wolf} />
+                            </a>
                         </div>
+
                         <div className="info">
                             <a data-toggle="collapse" href="#collapseExample" className="collapsed">
                                 John Doe <b className="caret"></b>
@@ -83,7 +91,7 @@ class MiniSidebar extends Component {
 
                             <div className="collapse in" id="read">
                                 <ul className="nav">
-                                    <NavItem action={this.handler} activeItem={this.state.activeItem} itemId="dashboard" title="Dashboard" to="/" />
+                                    <NavItem action={this.handler} activeItem={this.state.activeItem} itemId="dashboard" title="Dashboard" to="/dashboard" />
                                     <NavItem action={this.handler} activeItem={this.state.activeItem} itemId="buttons" title="Buttons" to="/buttons" />
                                     <NavItem action={this.handler} activeItem={this.state.activeItem} itemId="tables" title="Tables" to="/tables" />
                                     <NavItem action={this.handler} activeItem={this.state.activeItem} itemId="grid" title="Grid" to="/grid" />

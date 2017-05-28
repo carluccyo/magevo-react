@@ -6,6 +6,9 @@ import avatar from './assets/img/avatar.jpg';
 import wolf from './assets/img/wolf.jpg';
 import wolf2 from './assets/img/wolf2.png';
 
+
+import napoli from './assets/img/napoli.png';
+
 class NavItem extends Component {
 
     render() {
