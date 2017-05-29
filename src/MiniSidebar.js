@@ -35,7 +35,7 @@ class MiniSidebar extends Component {
         this.handler = this.handler.bind(this);
 
         this.state = {
-            activeItem: 'dashboard'
+            activeItem: ''
         };
 
 

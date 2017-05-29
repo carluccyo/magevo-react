@@ -215,6 +215,7 @@ class Dashboard extends Component {
                 <br />
 
                 <div className="row">
+                    
                     <div className="col-md-4">
                         <div className="card card-product" data-count="13">
 
@@ -256,6 +257,7 @@ class Dashboard extends Component {
                             </div>
                         </div>
                     </div>
+
                     <div className="col-md-4">
                         <div className="card card-product" data-count="9">
                             <div className="card-image" data-header-animation="true">
