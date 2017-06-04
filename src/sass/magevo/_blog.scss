@@ -1,0 +1,15 @@
+@media (min-width: 990px) {
+    .blog-panel-left {
+        display: table-cell;
+        vertical-align: top;
+        width: 75%;
+        float: left;
+    }
+    .blog-panel-right {
+        display: table-cell;
+        vertical-align: top;
+        width: 350px;
+        width: 15%;
+        float: right;
+    }
+}

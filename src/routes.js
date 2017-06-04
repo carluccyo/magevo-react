@@ -80,8 +80,8 @@ class App extends Component {
                     <div className="content">
                         <div className="container-fluid">
                             <Switch>
-                                <Route exact path='/' component={Home} />
-                                <Route exact path='/blog' component={Blog} />
+                                <Route exact path='/' component={Blog} />
+                                <Route exact path='/home' component={Home} />
                                 <Route exact path='/dashboard' component={Dashboard} />
                                 <Route exact path='/buttons' component={Buttons} />
                                 <Route exact path='/tables' component={Tables} />
