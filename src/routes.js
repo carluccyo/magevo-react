@@ -20,6 +20,7 @@ import Tables from './routes/Tables';
 import Timeline from './routes/Timeline';
 
 import Home from './routes/Home';
+import Blog from './routes/Blog';
 
 import Grid from './routes/Grid';
 import UserProfile from './routes/UserProfile';
@@ -80,6 +81,7 @@ class App extends Component {
                         <div className="container-fluid">
                             <Switch>
                                 <Route exact path='/' component={Home} />
+                                <Route exact path='/blog' component={Blog} />
                                 <Route exact path='/dashboard' component={Dashboard} />
                                 <Route exact path='/buttons' component={Buttons} />
                                 <Route exact path='/tables' component={Tables} />

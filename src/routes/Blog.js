@@ -5,7 +5,7 @@ import card2 from '../assets/img/card-2.jpeg';
 import card3 from '../assets/img/card-3.jpeg';
 
 
-class Box extends Component {
+class Post extends Component {
     state = {}
     render() {
         return (
@@ -64,7 +64,7 @@ class Box extends Component {
 
 
 
-class BoxList extends Component {
+class PostList extends Component {
 
     constructor(props) {
         super(props);
@@ -77,7 +77,7 @@ class BoxList extends Component {
     render() {
         var stationComponents = this.props.items.map(function (item) {
             console.log('item');
-            return <Box key={item.id} item={item} />;
+            return <Post key={item.id} item={item} />;
         });
         return <div>{stationComponents}</div>;
     }
@@ -98,15 +98,15 @@ var RESULT = [
 
 
 
-class Hone extends Component {
+class Blog extends Component {
     state = {}
     render() {
         return (
             <div>
-                <BoxList items={RESULT} />
+                <PostList items={RESULT} />
             </div>
         );
     }
 }
 
-export default Hone;
+export default Blog;
